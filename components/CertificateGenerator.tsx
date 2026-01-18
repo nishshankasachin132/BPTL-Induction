@@ -2,6 +2,7 @@
 import React from 'react';
 import { User, SiteSettings } from '../types.ts';
 import { Award, Download, Loader2 } from 'lucide-react';
+import { jsPDF } from 'jspdf';
 
 interface CertificateGeneratorProps {
   user: User;
@@ -13,7 +14,6 @@ export default function CertificateGenerator({ user, settings }: CertificateGene
 
   const generatePDF = async () => {
     setIsGenerating(true);
-    const { jsPDF } = (window as any).jspdf;
     
     // Simulate generation delay
     await new Promise(resolve => setTimeout(resolve, 1500));

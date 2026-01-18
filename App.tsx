@@ -283,7 +283,7 @@ export default function App() {
                 type="password"
                 required
                 className="w-full px-4 py-3 bg-slate-50 border-2 border-slate-100 rounded-xl focus:border-teal-500 focus:outline-none transition-all"
-                placeholder="Enter admin password"
+                placeholder="Enter password"
                 value={loginPass}
                 onChange={(e) => setLoginPass(e.target.value)}
               />
